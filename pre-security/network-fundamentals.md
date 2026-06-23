@@ -41,3 +41,32 @@ Los primeros 6 caracteres identifican a la empresa que fabricó la interfaz de r
 Spoofing de MAC :Las direcciones MAC pueden ser falsificadas (spoofed).
 A esto se le llama MAC Spoofing : Consiste en que un dispositivo se hace pasar por otro utilizando su dirección MAC.
 
+Ping(ICMP)
+Ping es una de las herramientas de red más fundamentales que existen. Ping utiliza paquetes ICMP (Internet Control Message Protocol) para determinar el rendimiento de una conexión entre dispositivos, por ejemplo: Si existe conexión, Si la conexión es confiable , Cuánto tarda la comunicación.
+
+El tiempo que tardan los paquetes ICMP en viajar entre dispositivos es medido por Ping.
+
+Esta medición se realiza mediante:
+
+Un paquete ICMP Echo Request (solicitud de eco).
+Un paquete ICMP Echo Reply (respuesta de eco) enviado por el dispositivo de destino.
+
+Sería algo así:
+
+Mi PC
+  |
+  | Echo Request
+  v
+Servidor
+  |
+  | Echo Reply
+  v
+Mi PC
+
+Ping mide cuánto tiempo tarda en completarse ese viaje de ida y vuelta.
+Esta herramienta viene instalada por defecto en sistemas operativos como : Linux,Windows.
+
+La sintaxis básica es:
+
+ping direccion_IP
+ping sitio_web
